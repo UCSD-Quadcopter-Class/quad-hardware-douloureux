@@ -1589,7 +1589,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="5.08" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<<<<<<< HEAD
 <net name="RX0" class="0">
+=======
+<net name="PX0" class="0">
+>>>>>>> 0e4edc83ddc38a7e67b757f6329f282d8bac069d
 <segment>
 <pinref part="U1" gate="G$1" pin="PE0(RXD0/PCINT8)"/>
 <wire x1="7.62" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
