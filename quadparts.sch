@@ -2760,7 +2760,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="U$2" gate="G$1" x="144.78" y="-10.16" rot="R90"/>
 <instance part="C12" gate="G$1" x="119.38" y="22.86"/>
 <instance part="BREAKOUT_HEADER" gate="G$1" x="139.7" y="35.56"/>
-<instance part="U$3" gate="G$1" x="66.04" y="152.4" rot="R180"/>
+<instance part="U$3" gate="G$1" x="58.42" y="160.02" rot="R180"/>
 <instance part="P+7" gate="VCC" x="-50.8" y="129.54"/>
 <instance part="U$4" gate="G$1" x="-38.1" y="114.3"/>
 <instance part="LED4" gate="G$1" x="-22.86" y="106.68" rot="R90"/>
