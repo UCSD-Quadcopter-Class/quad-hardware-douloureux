@@ -743,7 +743,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="N-CHANNEL_MOSFET" uservalue="yes">
+<deviceset name="N-CHANNEL_MOSFET">
 <gates>
 <gate name="G$1" symbol="N-CHANNEL_MOSFET" x="0" y="0"/>
 </gates>

@@ -1,0 +1,12 @@
+LED used: SSF-LXH305ID-TR
+
+We decided to use this LED as it had three colors available, RED, GREEN, and YELLOW. 
+
+We planned to use the red as front and back and GREEN and YELLOW as left and right respectively.
+
+Datasheet for RED LED: SSF-LXH305ID-TR
+Datasheet for GREEN LED: SSF-LXH305GD
+Datasheet for YELLOW LED: SSF-LXH305YD
+
+For now we have added it into the schematic and will place it in the board respective of the directions of
+the plane to the direction it moves. 
