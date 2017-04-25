@@ -1,0 +1,39 @@
+Jason W & Zhe met with Jason S & Connie at Envision lab @ 4:00 pm - 5:00 pm and then 
+moved to the library from 5:00 pm - 6:30 pm and discussed parts missing, wires not 
+being connected, how and where tkeepout + tplace should be, and how pads should be 
+1mm away from the actual device for soldering purposes. 
+
+Need to connect PB5, PB6, PB7 -> you may need to label your entire microcontroller 
+to how it was orginally labeled because in the future we might be connecting them 
+to more parts we will build later on.
+
+Following pin 8 and 9 of the microcontroller, instructions said to replace the two 
+capacitors and connect the two ends with just wires.
+We are unsure of pin 14 and pin 15 of the microcontroller, why do u need an led?
+
+IMU
+Connect SDA and SCL of IMU to microcontroller, not power, no resistors are needed.
+
+Motor
+Each motor is not driven by the PB5 pin as the pulse width, since the gimbal will 
+be sending out the individual signals, they should be connected to other ports in 
+the microcontroller such as PE5, PE3, PE4, PB5.
+
+Battery 
+Pin 4 of the voltage regulator might need a capacitor before it leads into GND.
+
+Libraries
+LED.lbr
+Is the pad size of your LED correct?
+
+Connie.lbr
+Is the pad size of your LED’s correct?
+Need to have silk screen and make sure the parts follow how the pads are placed 
+upright, 1mm away from the actual device.
+Then the dimension of the entire part should be encased by the tkeepout layer
+It seems not every part of your schematic is correct, at least one thing has to 
+be done for each i.e for yours or Jason’s the IMU’s pads either were extended in 
+the wrong direction or the keepout layer did not encase the entire device
+
+
+

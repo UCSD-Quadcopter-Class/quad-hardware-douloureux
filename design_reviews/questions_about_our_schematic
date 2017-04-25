@@ -1,0 +1,68 @@
+Meeting Time/Place: 4 - 6:30, 04/24/17, Envision Lab and Price Center
+Schematic:
+
+Connectivity:
+ERC check has 86 warnings.
+	Unconnected wires/pins, missing junctions.
+		i.e. at D5, D6, P$19, etc...
+	Floating/useless wire segments.
+		i.e. btwn D6 and R3
+Motor controllers should be connected to VBAT and BAT_GND
+Need a net bridge connecting gnd and bat_gnd
+Diode in motor controllers should be Schottky diode, not LED?
+Breakout header pins should be the same pins that are connected
+from the motor controllers to the microcontroller
+
+Functionality:
+	No current-limiting resistor for LED_S1, 2, 3, 4?
+		forward voltages of 2.2-2.6, 2.1-2.5, 2.0-2.5
+	replace LEDs D5 and D6
+	CS pins on IMU not connected to VDDIO (select I2C?)
+	ISP should not be connected to power
+
+Libraries:
+
+LED in LEDs.lbr
+	Package:
+		Nothing in tPlace?
+			part outline
+			device orientation (i.e. mark anode)
+		Nothing in tDocu?
+			actual part line/dimensions
+		Nothing in tNames?
+			>Name
+		Nothing in tValues?
+			>Value
+		Be sure to use vector font.
+Device:
+Shouldn’t you create variants for your 3 different colors?
+Part number should probably be 67-1374-1-ND instead 
+of 67-1374-2-ND (tape and reel with minimum 1000 units to purchase).
+
+
+
+IMU
+	Package:
+		I think the inner outline is supposed to be in tDocu?
+		(not sure it matters)
+		Pad location/size doesn’t look right.
+		Aren’t pads supposed to extend 1mm from device?
+	Device:
+		Missing prefix
+MOSFET
+	Symbol:
+		Missing Value? 
+		(The parts list specifies a value for it.)
+	Package:
+		Value?
+		Nothing in tPlace?
+			Outline
+			pin 1 indicator
+		Nothing in tDocu?
+			pad placement
+			need to extend out from device by 1mm?
+	Device:
+		Value on?
+		Missing prefix
+
+
