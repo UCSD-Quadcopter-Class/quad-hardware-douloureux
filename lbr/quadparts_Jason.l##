@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="no" active="yes"/>
@@ -15,7 +15,7 @@
 <layer number="102" name="onBoard" color="10" fill="3" visible="no" active="yes"/>
 <layer number="103" name="offBoard" color="9" fill="3" visible="no" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
@@ -478,6 +478,7 @@
 <wire x1="-0.6" y1="0.85" x2="0.6" y2="0.85" width="0.127" layer="21"/>
 <text x="-0.7" y="1.3" size="0.3048" layer="25" font="vector">&gt;NAME</text>
 <text x="-0.6" y="-2.035" size="0.3048" layer="27" font="vector">&gt;VALUE</text>
+<dimension x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" x3="-2.54" y3="0" textsize="1.27" layer="21"/>
 </package>
 <package name="RESISTOR">
 <smd name="P$1" x="-0.725" y="0" dx="0.55" dy="1.25" layer="1" rot="R180"/>
