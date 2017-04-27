@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5008,7 +5008,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <segment>
 <pinref part="C17" gate="G$1" pin="1"/>
 <pinref part="U$3" gate="G$1" pin="VDD_IO"/>
-<wire x1="198.12" y1="130.81" x2="215.9" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="130.81" x2="210.312" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="210.312" y1="130.81" x2="212.09" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="130.81" x2="215.9" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="130.81" x2="252.73" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="252.73" y1="130.81" x2="252.73" y2="129.54" width="0.1524" layer="91"/>
 <junction x="215.9" y="130.81"/>
@@ -5019,6 +5021,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="198.12" y1="130.81" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="VDD_IO2"/>
 <wire x1="215.9" y1="114.3" x2="232.41" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="CS_A/G"/>
+<wire x1="257.81" y1="91.44" x2="257.81" y2="81.788" width="0.1524" layer="91"/>
+<wire x1="257.81" y1="81.788" x2="212.09" y2="81.788" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="81.788" x2="212.09" y2="130.81" width="0.1524" layer="91"/>
+<junction x="212.09" y="130.81"/>
+<pinref part="U$3" gate="G$1" pin="CS_M"/>
+<wire x1="262.89" y1="91.44" x2="262.89" y2="77.978" width="0.1524" layer="91"/>
+<wire x1="262.89" y1="77.978" x2="210.312" y2="77.978" width="0.1524" layer="91"/>
+<wire x1="210.312" y1="77.978" x2="210.312" y2="130.81" width="0.1524" layer="91"/>
+<junction x="210.312" y="130.81"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VDD2"/>
