@@ -128,7 +128,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED_RING">
+<deviceset name="LED_RING" prefix="LR">
 <gates>
 <gate name="G$1" symbol="LED_RING" x="0" y="0"/>
 </gates>
