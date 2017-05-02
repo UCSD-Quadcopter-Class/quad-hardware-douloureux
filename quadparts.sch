@@ -3081,17 +3081,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <smd name="P$2" x="-0.95" y="-1.4845" dx="0.559" dy="1.724" layer="1"/>
 <smd name="P$3" x="0.95" y="-1.4845" dx="0.559" dy="1.724" layer="1"/>
 <smd name="P$1" x="0" y="1.4845" dx="0.559" dy="1.724" layer="1"/>
-<text x="-0.62" y="-0.155" size="0.3048" layer="25">&gt;NAME</text>
+<text x="1.666" y="0.099" size="0.3048" layer="25" font="vector">&gt;NAME</text>
 <wire x1="-1.3" y1="1.4" x2="1.3" y2="1.4" width="0.01" layer="21"/>
 <wire x1="1.3" y1="1.4" x2="1.3" y2="-1.4" width="0.01" layer="21"/>
 <wire x1="1.3" y1="-1.4" x2="-1.3" y2="-1.4" width="0.01" layer="21"/>
 <wire x1="-1.3" y1="-1.4" x2="-1.3" y2="1.4" width="0.01" layer="21"/>
-<wire x1="0" y1="2.4" x2="0.1" y2="2.4" width="0.05" layer="39"/>
-<wire x1="0.1" y1="2.4" x2="1.4" y2="2.4" width="0.05" layer="39"/>
 <wire x1="1.4" y1="2.4" x2="1.4" y2="-2.4" width="0.05" layer="39"/>
 <wire x1="1.4" y1="-2.4" x2="-1.3" y2="-2.4" width="0.05" layer="39"/>
 <wire x1="-1.3" y1="-2.4" x2="-1.3" y2="2.4" width="0.05" layer="39"/>
-<wire x1="-1.3" y1="2.4" x2="0" y2="2.4" width="0.05" layer="39"/>
+<wire x1="-1.3" y1="2.4" x2="1.4" y2="2.4" width="0.05" layer="39"/>
+<text x="1.524" y="-0.762" size="0.3048" layer="27" font="vector">&gt;Value</text>
 </package>
 <package name="9-AXIS_IMU">
 <smd name="P$1" x="-1.53" y="1.775" dx="1.4" dy="0.28" layer="1" rot="R270"/>
@@ -3118,7 +3117,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <smd name="P$22" x="-0.218" y="1.775" dx="1.4" dy="0.28" layer="1" rot="R90"/>
 <smd name="P$23" x="-0.655" y="1.775" dx="1.4" dy="0.28" layer="1" rot="R90"/>
 <smd name="P$24" x="-1.092" y="1.775" dx="1.4" dy="0.28" layer="1" rot="R90"/>
-<text x="-0.8095" y="0.0715" size="0.3048" layer="25">&gt;NAME</text>
+<text x="-0.8095" y="0.0715" size="0.3048" layer="25" font="vector">&gt;NAME</text>
 <circle x="-0.9525" y="0.7725" radius="0.1419875" width="0.0381" layer="21"/>
 <wire x1="-1.8" y1="1.6" x2="1.8" y2="1.6" width="0.01" layer="21"/>
 <wire x1="1.8" y1="1.6" x2="1.8" y2="-1.6" width="0.01" layer="21"/>
