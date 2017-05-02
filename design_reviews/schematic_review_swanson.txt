@@ -1,18 +1,5 @@
-Your schematic is not named properly.  Should be quadcopter.sch
+Your schematic (which is not named properly) is corrupt.
 
+I am not sure if I'm looking at the right version, since you didn't tag your repo as requested in the lab.
 
-The GNDS on the input side of your voltage regulator should be BAT_GND
-
-Your LED symbol is conventional.
-
-the LEDs you chose a little odd.  Are you sure you want one with a case?
-
-Power should not be connected on the 6-pin programming header.
-
-filter caps in power supply should be 0.1uf
-
-Your symbol for teh MOSfet is not a normal mosfet symbol _and_ it doesn't look like the package.  I would opt for a normal mosfet symbol, but if are going to draw something that looks kind of like the package, the pins should line up with the package.
-
-
-the net named "SDA" is looks like it should be part of 3V.  And the net that should be SDA is called N$1.
 
