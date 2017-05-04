@@ -1,0 +1,125 @@
+Your design must fit with a rectangle whose area is less than 30 in2 (19,354mm2).
+drew a box around your design (including the arms) and it’s approximately 170mm x 170mm = 28,900mm2
+
+Your outline for your board is disconnected at some points
+The arms need to have little “hands” at the end of them to hold the motors, 
+sort of like the wooden mock board we received in class
+
+Antenna and Antenna Driver
+
+Airwire between balun and antenna. (needs to be extra thick)
+It looks like two wires go into the antenna driver area that are on the bottom layer, 
+but the design review guidelines ask to make sure that all the traces for this area 
+are on the top layer.
+
+Is there a ground pour in layer Top surrounding the antenna driver components?
+Is there a ground pour in layer 2 surround the antenna driver?
+Make sure that the ground pours cover all the components? It kind of just looks like 
+they are surrounding the antenna driver components rn
+
+The board is a little big based on the requirements listed above for (1) so I think 
+compared to the red board’s design, your microcontroller is a little far away from the 
+antenna. I think the traces from the microcontroller to the antenna needed to be symmetrical
+The wire between the balun, the antenna, and the capacitor between them should be wider 
+than the other traces (0.5mm should be fine.  See below about net classes).
+
+Power and Ground
+
+Is the VBAT power plane wider than 0.5mm everywhere?
+Your VBAT polygon gets really thin at the points of the crescent
+
+Does the VBAT power plane reach under all four motor drivers?
+Yes but I think your 3V polygon overlaps with the VBAT plane, which I think is bad
+Idk if this matters but in the lab it says to put the power pours on layer 2 and ground 
+on layer 15, but yours are swapped
+
+Does the combination of the BAT_GND and GND ground plane extend to almost every area of 
+the board (with the exception of the area round the antenna)?
+
+Does the antenna area not supposed to have GND planes? I thought the lab writeup said to 
+put them there (this is more for us too)
+Are there any parts of the power our ground pours that are very narrow?  They should be 
+no "necks" narrower than 0.5mm.
+Not sure if there is a problem with the GND pour under your antenna, where the corners 
+of the right triangle-esque polygon are pretty narrow.
+
+IMU
+Are the capacitors specified in the IMU datasheet located as close as is practical to 
+the IMU?
+they could probably be closer lol?
+- Is the IMU oriented so that the X and Y axes are aligned with the pitch and roll axis 
+of the quadcopter?
+	- I’m not even sure if we did this correctly, so you might want to double check 
+that this is true for your guys’ since I can’t tell.
+
+
+Headers
+Are the two FTDI headers oriented so the silkscreen is labels for the pins are on the board 
+and the pins will protrude off the board?
+
+Your 10 pin FTDI silkscreen labels point inwards towards your board. Idk about the other FTDI 
+headers that we didn’t build, though. the silkscreen is in the green dots?
+
+Microcontroller
+
+Is the layout of resonator and the associated caps similar to the layout of those parts on the 
+red board?
+Umm I think you can make the layout more similar to the red board?
+
+Do all the traces for the resonator and its associated caps lie in layer Top?
+
+I don’t really know what the resonator is lol but yes the caps around the uC looks like they 
+have traces on the top layer
+
+there are two traces on the bottom layer that extend outwards but i don’t know if those violate 
+this question
+
+Are the decoupling caps for the microcontroller located as close as possible to power pins of 
+the microcontroller?
+
+they could be closer
+
+Power Supply
+Is the voltage regulator located near the battery connector?
+can be closer?
+
+Motor Drivers
+Are the traces that carry large currents thick enough?
+Yes, on some of them. The left one seems to have VBAT run on the bottom layer, is that ok? The 
+motor driver on the bottom seems to not have thick traces
+
+Aesthetics
+
+Are nearby parts aligned?
+Since the board is a bit big some parts can be closer together
+
+Mechanical
+
+There are no ‘cups’ for the motor controller
+Checks
+
+Does DRC check pass without errors?
+1127 errors
+lots of unrouted wires
+
+If DRC doesn't pass with no errors, does the team have good explanations for why the errors are ok?
+Does DFM check pass with no show stoppers?
+
+Can’t seem to get DFM to run with 4 layers selected - wrong CAM file?
+
+Does Eagle Lint pass?
+Eagle lint runs for awhile and then the page refreshes and tells me to upload a new file? lol
+
+Gerber Files
+Are areas around the antenna clear in the gerber files?
+Are the power planes where you expect them to be in the gerber files?
+Are there any traces that cross in an unexpected way in the gerber files?
+Are there any elements that should be in the silkscreen that show up in metal layers?
+Are there any elements that should be in the metal layers but that show up on the silkscreen?
+Does the board outline match what was draw in the brd file? 
+Does FreeDFM pass?
+
+DFM:
+-Insufficient Spacing (3 violations)
+-Insufficient Pad to Copper Spacing (22 violations)
+-Missing Soldermask Clearance (118 violations)
