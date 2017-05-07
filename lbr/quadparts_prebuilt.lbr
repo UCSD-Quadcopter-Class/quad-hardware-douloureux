@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -478,7 +478,7 @@
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <text x="0" y="0" size="0.92" layer="51" font="vector" ratio="10">&gt;NAME</text>
 <text x="2.54" y="0" size="1.2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="2.54" y="-1.27" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
 <polygon width="0.01" layer="31">
 <vertex x="-1.435" y="0"/>
@@ -679,7 +679,7 @@
 <circle x="-2.86" y="0" radius="0.1" width="0.2" layer="21"/>
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <text x="3.81" y="0" size="1.2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="3.81" y="-1.27" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <text x="0" y="0" size="2" layer="51" font="vector" ratio="10">&gt;NAME</text>
 <wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
 <polygon width="0.01" layer="31">
@@ -883,7 +883,7 @@
 <circle x="-4.805" y="0" radius="0.1" width="0.2" layer="21"/>
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <text x="5.08" y="0" size="1.2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="5.08" y="-1.27" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <text x="0" y="0" size="2" layer="51" font="vector" ratio="10">&gt;NAME</text>
 <wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
 <polygon width="0.01" layer="31">
@@ -1861,7 +1861,7 @@
 </polygon>
 <wire x1="0.35" y1="0" x2="-0.35" y2="0" width="0.05" layer="39"/>
 <text x="7.62" y="1.27" size="1.2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="11.43" y="0" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="7.62" y="-2.54" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <text x="11.43" y="0" size="2" layer="51" font="vector" ratio="10">&gt;NAME</text>
 <wire x1="24.13" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
 <wire x1="24.13" y1="-1.27" x2="24.13" y2="1.27" width="0.12" layer="21"/>
@@ -1939,7 +1939,7 @@
 </polygon>
 <wire x1="0.35" y1="0" x2="-0.35" y2="0" width="0.05" layer="39"/>
 <text x="5.08" y="0" size="1.2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="1.27" y="0" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="5.08" y="-1.27" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <text x="1.27" y="0" size="2" layer="51" font="vector" ratio="10">&gt;NAME</text>
 <wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
 <wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.12" layer="21"/>
@@ -1967,7 +1967,7 @@
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <text x="0" y="0" size="0.87" layer="51" font="vector" ratio="10">&gt;NAME</text>
 <text x="2.54" y="0" size="1.2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="2.54" y="-1.27" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
 <polygon width="0.01" layer="31">
 <vertex x="-1.515" y="0"/>
@@ -2355,7 +2355,7 @@
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <text x="0" y="0" size="0.87" layer="51" font="vector" ratio="10">&gt;NAME</text>
 <text x="2.54" y="0" size="1.2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="2.54" y="-1.27" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
 <polygon width="0.01" layer="31">
 <vertex x="-1.415" y="0"/>
@@ -2568,7 +2568,7 @@
 <circle x="-2.79" y="0" radius="0.1" width="0.2" layer="21"/>
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <text x="2.54" y="0" size="1.2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="2.54" y="-1.27" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <text x="0" y="0" size="1.32" layer="51" font="vector" ratio="10">&gt;NAME</text>
 <wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
 <polygon width="0.01" layer="31">
@@ -2809,7 +2809,7 @@
 <circle x="-3.55" y="4.5" radius="0.2" width="0.4" layer="21"/>
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <text x="0" y="0" size="1.2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="0" y="-1.27" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <circle x="0" y="0" radius="1.75" width="0.2" layer="21"/>
 <text x="0" y="0" size="2" layer="51" font="vector" ratio="10">&gt;NAME</text>
 <wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
