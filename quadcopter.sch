@@ -1861,22 +1861,20 @@
 </package>
 <package name="SOT23-DBV">
 <rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-0.470165625" y1="-0.80415625" x2="-0.479834375" y2="-0.803903125" width="0.1524" layer="21"/>
+<wire x1="-0.485678125" y1="0.81" x2="0.48593125" y2="0.81" width="0.1524" layer="21"/>
 <rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
 <wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
 <wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
 <text x="0.095" y="-3.429" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
 <text x="0.095" y="2.905" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
-<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="0.485678125" y1="-0.81" x2="0.457975" y2="-0.803903125" width="0.1524" layer="21"/>
 <rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="1.42451875" y1="0.81584375" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
 <wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
-<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="1.42451875" y2="-0.81" width="0.1524" layer="21"/>
 <wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
 <smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
 <smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
@@ -3310,10 +3308,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <smd name="P$24" x="-1.092" y="1.775" dx="1.4" dy="0.28" layer="1" rot="R90"/>
 <text x="-0.8095" y="0.0715" size="0.3048" layer="25" font="vector">&gt;NAME</text>
 <circle x="-0.9525" y="0.7725" radius="0.1419875" width="0.0381" layer="21"/>
-<wire x1="-1.2" y1="1" x2="1.2" y2="1" width="0.01" layer="21"/>
-<wire x1="-1.2" y1="1" x2="-1.2" y2="-1" width="0.01" layer="21"/>
-<wire x1="-1.2" y1="-1" x2="1.2" y2="-1" width="0.01" layer="21"/>
-<wire x1="1.2" y1="-1" x2="1.2" y2="1" width="0.01" layer="21"/>
+<wire x1="-1.1238" y1="0.9492" x2="1.1238" y2="0.9492" width="0.01" layer="21"/>
+<wire x1="-1.1238" y1="0.9492" x2="-1.1238" y2="-0.9238" width="0.01" layer="21"/>
+<wire x1="-1.1238" y1="-0.9238" x2="1.1238" y2="-0.9238" width="0.01" layer="21"/>
+<wire x1="1.1238" y1="-0.9238" x2="1.1238" y2="0.9492" width="0.01" layer="21"/>
 <wire x1="-2.7" y1="-2.5" x2="2.7" y2="-2.5" width="0.05" layer="39"/>
 <wire x1="-2.7" y1="-2.5" x2="-2.7" y2="2.5" width="0.05" layer="39"/>
 <wire x1="-2.7" y1="2.5" x2="2.7" y2="2.5" width="0.05" layer="39"/>
@@ -4218,7 +4216,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="C27" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="GND" class="2">
+<net name="GND" class="0">
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="81.28" y1="27.94" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
