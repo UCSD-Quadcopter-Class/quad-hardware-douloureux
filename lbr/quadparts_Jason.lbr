@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -520,10 +520,6 @@
 <smd name="P$24" x="-1.092" y="1.775" dx="1.4" dy="0.28" layer="1" rot="R90"/>
 <text x="-0.8095" y="0.0715" size="0.3048" layer="25" font="vector">&gt;NAME</text>
 <circle x="-0.9525" y="0.7725" radius="0.1419875" width="0.0381" layer="21"/>
-<wire x1="-1.8" y1="1.6" x2="1.8" y2="1.6" width="0.01" layer="21"/>
-<wire x1="1.8" y1="1.6" x2="1.8" y2="-1.6" width="0.01" layer="21"/>
-<wire x1="1.8" y1="-1.6" x2="-1.8" y2="-1.6" width="0.01" layer="21"/>
-<wire x1="-1.8" y1="-1.6" x2="-1.8" y2="1.6" width="0.01" layer="21"/>
 <wire x1="-1.2" y1="1" x2="1.2" y2="1" width="0.01" layer="21"/>
 <wire x1="-1.2" y1="1" x2="-1.2" y2="-1" width="0.01" layer="21"/>
 <wire x1="-1.2" y1="-1" x2="1.2" y2="-1" width="0.01" layer="21"/>
