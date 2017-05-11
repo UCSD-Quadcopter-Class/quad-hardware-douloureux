@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -57,20 +57,6 @@
 </layers>
 <library>
 <packages>
-<package name="LEDS">
-<smd name="P$1" x="-1.75" y="0" dx="2.25" dy="2.4" layer="1" rot="R180"/>
-<smd name="P$2" x="1.75" y="0" dx="2.25" dy="2.4" layer="1" rot="R180"/>
-<wire x1="-1.905" y1="1.27" x2="1.905" y2="1.27" width="0.03" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="-1.27" width="0.03" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="-1.905" y2="-1.27" width="0.03" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-1.905" y2="1.27" width="0.03" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="3.175" y2="-1.27" width="0.15" layer="39"/>
-<wire x1="3.175" y1="-1.27" x2="3.175" y2="1.27" width="0.15" layer="39"/>
-<wire x1="3.175" y1="1.27" x2="-3.175" y2="1.27" width="0.15" layer="39"/>
-<wire x1="-3.175" y1="1.27" x2="-3.175" y2="-1.27" width="0.15" layer="39"/>
-<text x="-1.905" y="1.905" size="0.8128" layer="25" font="vector">&gt;Name</text>
-<text x="-1.905" y="-2.54" size="0.6096" layer="27" font="vector">&gt;Value</text>
-</package>
 <package name="LED_RING">
 <circle x="0" y="0" radius="26.162" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="32.766" width="0.127" layer="21"/>
@@ -82,18 +68,13 @@
 <pad name="DATA_IN" x="4.1402" y="31.3182" drill="0.8"/>
 <text x="-14.986" y="26.416" size="1.27" layer="21" font="vector">&gt;Data Out</text>
 <text x="1.016" y="28.194" size="1.27" layer="21" font="vector">&gt;Date in</text>
+<wire x1="-34.29" y1="0" x2="-34.29" y2="-1.27" width="0.127" layer="39" curve="-357.878177"/>
+<wire x1="-25.4" y1="0" x2="-25.4" y2="-1.27" width="0.127" layer="39" curve="-357.137595"/>
+<wire x1="-34.29" y1="0" x2="-25.4" y2="0" width="0.127" layer="39"/>
+<wire x1="-34.29" y1="-1.27" x2="-25.4" y2="-1.27" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
-<symbol name="LED_OURS">
-<circle x="0" y="0" radius="2.83980625" width="0.254" layer="94"/>
-<pin name="P$1" x="-7.62" y="0" visible="off" length="middle"/>
-<pin name="P$2" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
-<wire x1="-1.778" y1="2.032" x2="2.032" y2="-2.032" width="0.254" layer="94"/>
-<wire x1="2.032" y1="2.032" x2="-2.032" y2="-2.032" width="0.254" layer="94"/>
-<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="1.778" layer="97">&gt;VALUE</text>
-</symbol>
 <symbol name="LED_RING">
 <circle x="0" y="0" radius="19.83803125" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="14.810615625" width="0.254" layer="94"/>
@@ -105,29 +86,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED" prefix="LED" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="LED_OURS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LEDS">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Zhe Wang" constant="no"/>
-<attribute name="DIST" value="DigiKey" constant="no"/>
-<attribute name="DISTPN" value="67-1374-2-ND" constant="no"/>
-<attribute name="MFR" value="Lumex Opto/Components Inc." constant="no"/>
-<attribute name="MPN" value="SSF-LXH305ID-TR or SSF-LXH305GD or SSF-LXH305YD" constant="no"/>
-<attribute name="REVIEWER" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED_RING" prefix="LR">
 <gates>
 <gate name="G$1" symbol="LED_RING" x="0" y="0"/>
