@@ -3279,6 +3279,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="1.4" y1="-2.4" x2="-1.3" y2="-2.4" width="0.05" layer="39"/>
 <wire x1="-1.3" y1="-2.4" x2="-1.3" y2="2.4" width="0.05" layer="39"/>
 <wire x1="-1.3" y1="2.4" x2="1.4" y2="2.4" width="0.05" layer="39"/>
+<text x="1.524" y="-0.762" size="0.3048" layer="27" font="vector">&gt;Value</text>
 </package>
 <package name="9-AXIS_IMU">
 <smd name="P$1" x="-1.53" y="1.775" dx="1.4" dy="0.28" layer="1" rot="R270"/>
@@ -3525,7 +3526,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </device>
 </devices>
 </deviceset>
-<deviceset name="N-CHANNEL_MOSFET" prefix="M">
+<deviceset name="N-CHANNEL_MOSFET" prefix="M" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="N-CHANNEL_MOSFET" x="0" y="0"/>
 </gates>
@@ -3702,14 +3703,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <connect gate="G$1" pin="PWR" pad="PWR"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CREATOR" value="Zhe Wang" constant="no"/>
-<attribute name="DIST" value="DIGIKEY" constant="no"/>
-<attribute name="DISTPN" value="1528-1099-ND" constant="no"/>
-<attribute name="MFR" value="Adafruit Industries LLC" constant="no"/>
-<attribute name="MPN" value="1586" constant="no"/>
-<attribute name="REVIEWER" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

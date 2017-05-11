@@ -141,7 +141,14 @@
 <connect gate="G$1" pin="PWR" pad="PWR"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="Zhe Wang" constant="no"/>
+<attribute name="DIST" value="DIGIKEY" constant="no"/>
+<attribute name="DISTPN" value="1528-1099-ND" constant="no"/>
+<attribute name="MFR" value="Adafruit Industries LLC" constant="no"/>
+<attribute name="MPN" value="1586" constant="no"/>
+<attribute name="REVIEWER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
