@@ -1,5 +1,15 @@
 Your schematic (which is not named properly) is corrupt.
 
-I am not sure if I'm looking at the right version, since you didn't tag your repo as requested in the lab.
+The cap on your reset line is too big.
+
+THere's one pin on your IMU  that should be connected to ground but is connected to VCC instead.  Probably the magnetometer address bit.
+
+The motor controlled by U$9 is not connected to VBAT. The net label is misleading.
+
+The decoupling caps on your motor controllers should be between VBAT and BAT_GND.
+
+
+
+ 
 
 
