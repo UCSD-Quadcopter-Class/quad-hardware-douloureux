@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3620,48 +3620,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </deviceset>
 </devicesets>
 </library>
-<library name="quadparts_Zhe">
-<packages>
-<package name="NET_BRIDGE">
-<smd name="P$1" x="-0.508" y="0" dx="1.4224" dy="0.7112" layer="1" rot="R180"/>
-<smd name="P$2" x="0.254" y="0" dx="1.4224" dy="0.7112" layer="1" rot="R180"/>
-<wire x1="-1.27" y1="0.508" x2="-1.27" y2="-0.508" width="0.127" layer="39"/>
-<wire x1="-1.27" y1="-0.508" x2="1.016" y2="-0.508" width="0.127" layer="39"/>
-<wire x1="1.016" y1="-0.508" x2="1.016" y2="0.508" width="0.127" layer="39"/>
-<wire x1="-1.2" y1="0.5" x2="1" y2="0.5" width="0.127" layer="39"/>
-</package>
-</packages>
-<symbols>
-<symbol name="NET_BRIDGE">
-<wire x1="-1.524" y1="1.016" x2="-1.524" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-1.524" y1="-1.524" x2="2.032" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="2.032" y1="-1.524" x2="2.032" y2="1.016" width="0.254" layer="94"/>
-<wire x1="2.032" y1="1.016" x2="-1.524" y2="1.016" width="0.254" layer="94"/>
-<text x="-7.62" y="-2.032" size="1.016" layer="94">&gt;NAME
-</text>
-<pin name="P$1" x="-1.016" y="-4.064" visible="off" length="short" rot="R90"/>
-<pin name="P$2" x="1.524" y="-4.064" visible="off" length="short" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NET_BRIDGE">
-<gates>
-<gate name="G$1" symbol="NET_BRIDGE" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="NET_BRIDGE">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="LEDs">
 <packages>
 <package name="LED_RING">
@@ -3675,6 +3633,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pad name="DATA_IN" x="4.1402" y="31.3182" drill="0.8"/>
 <text x="-14.986" y="26.416" size="1.27" layer="21" font="vector">&gt;Data Out</text>
 <text x="1.016" y="28.194" size="1.27" layer="21" font="vector">&gt;Date in</text>
+<wire x1="-34.29" y1="0" x2="-34.29" y2="-1.27" width="0.127" layer="39" curve="-357.878177"/>
+<wire x1="-25.4" y1="0" x2="-25.4" y2="-1.27" width="0.127" layer="39" curve="-357.137595"/>
+<wire x1="-34.29" y1="0" x2="-25.4" y2="0" width="0.127" layer="39"/>
+<wire x1="-34.29" y1="-1.27" x2="-25.4" y2="-1.27" width="0.127" layer="39"/>
+<text x="-40.64" y="-8.89" size="1.6764" layer="25" font="vector">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -3685,7 +3648,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pin name="GND" x="-25.4" y="-5.08" length="middle"/>
 <pin name="DATA_IN" x="22.86" y="7.62" length="middle" rot="R180"/>
 <pin name="DATA_OUT" x="22.86" y="-7.62" length="middle" rot="R180"/>
-<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3709,6 +3672,55 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <attribute name="MFR" value="Adafruit Industries LLC" constant="no"/>
 <attribute name="MPN" value="1586" constant="no"/>
 <attribute name="REVIEWER" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="quadparts_Zhe">
+<packages>
+<package name="NET_BRIDGE">
+<smd name="P$1" x="0.762" y="0.508" dx="1.4224" dy="0.7112" layer="1" rot="R180"/>
+<smd name="P$2" x="1.524" y="0.508" dx="1.4224" dy="0.7112" layer="1" rot="R180"/>
+<wire x1="0" y1="1.016" x2="0" y2="0" width="0.127" layer="39"/>
+<wire x1="0" y1="0" x2="2.286" y2="0" width="0.127" layer="39"/>
+<wire x1="2.286" y1="0" x2="2.286" y2="1.016" width="0.127" layer="39"/>
+<wire x1="0.07" y1="1.008" x2="2.27" y2="1.008" width="0.127" layer="39"/>
+<text x="2.54" y="0" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="NET_BRIDGE">
+<pin name="P$1" x="2.54" y="-2.54" visible="off" length="short" rot="R90"/>
+<pin name="P$2" x="5.08" y="-2.54" visible="off" length="short" rot="R90"/>
+<text x="10.16" y="0" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NET_BRIDGE">
+<gates>
+<gate name="G$1" symbol="NET_BRIDGE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NET_BRIDGE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Zhe" constant="no"/>
+<attribute name="DIST" value="NONE" constant="no"/>
+<attribute name="DISTPN" value="11-22-3-4-5" constant="no"/>
+<attribute name="MFR" value="NONE" constant="no"/>
+<attribute name="MPN" value="123-456-789" constant="no"/>
+<attribute name="REVIEWER" value="NONE" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3820,7 +3832,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="D2" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="D3" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="D4" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
-<part name="U$11" library="quadparts_Zhe" deviceset="NET_BRIDGE" device=""/>
 <part name="GND43" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND20" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
 <part name="GND22" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
@@ -3830,6 +3841,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="LR1" library="LEDs" deviceset="LED_RING" device=""/>
 <part name="GND1" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="U$11" library="quadparts_Zhe" deviceset="NET_BRIDGE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3926,7 +3938,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="D2" gate="G$1" x="304.8" y="16.002" rot="R90"/>
 <instance part="D3" gate="G$1" x="381" y="17.78" rot="R90"/>
 <instance part="D4" gate="G$1" x="152.4" y="22.098" rot="R90"/>
-<instance part="U$11" gate="G$1" x="83.82" y="214.63"/>
 <instance part="GND43" gate="1" x="81.28" y="200.406"/>
 <instance part="GND20" gate="1" x="109.22" y="-36.83"/>
 <instance part="GND22" gate="1" x="181.61" y="-40.132"/>
@@ -3936,6 +3947,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="R3" gate="G$1" x="212.3402" y="121.106" rot="R270"/>
 <instance part="LR1" gate="G$1" x="147.32" y="203.2"/>
 <instance part="GND1" gate="1" x="172.72" y="118.11"/>
+<instance part="U$11" gate="G$1" x="80.264" y="215.646"/>
 </instances>
 <busses>
 </busses>
@@ -4421,13 +4433,13 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </segment>
 <segment>
 <pinref part="BATT1" gate="G$1" pin="N"/>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
 <wire x1="78.74" y1="208.28" x2="81.28" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="208.28" x2="82.804" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="82.804" y1="208.28" x2="82.804" y2="210.566" width="0.1524" layer="91"/>
+<wire x1="82.804" y1="208.28" x2="82.804" y2="213.106" width="0.1524" layer="91"/>
 <pinref part="GND43" gate="1" pin="GND"/>
 <wire x1="81.28" y1="202.946" x2="81.28" y2="208.28" width="0.1524" layer="91"/>
 <junction x="81.28" y="208.28"/>
+<pinref part="U$11" gate="G$1" pin="P$1"/>
+<wire x1="81.28" y1="208.28" x2="82.804" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LR1" gate="G$1" pin="GND"/>
@@ -4480,10 +4492,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="154.94" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="P$2"/>
 <pinref part="GND38" gate="1" pin="BAT_GND"/>
-<wire x1="85.344" y1="210.566" x2="88.9" y2="210.566" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="210.566" x2="88.9" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="U$11" gate="G$1" pin="P$2"/>
+<wire x1="88.9" y1="203.2" x2="85.344" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="85.344" y1="203.2" x2="85.344" y2="213.106" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="124.46" y1="-22.86" x2="134.62" y2="-22.86" width="0.1524" layer="91"/>
@@ -4937,10 +4949,4 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
