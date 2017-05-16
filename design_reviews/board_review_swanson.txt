@@ -1,3 +1,4 @@
+
 commit 31284d968fca0c2debc7e28cd229677303ac0adc
 
 Power
@@ -51,3 +52,7 @@ Misc
 
 
 A bunch of your wires are thicker than they need to be. e.g., RESET and the PWM lines should be minimum width.  It'll make routing easier.  Use the auto router.
+
+You are using the wrong diodes in your motor drivers.  You want the other diode in the prebuilt parts lbr.  It has wider pads.
+
+The pads on your MOSFET are too small. See page 6 of the data sheet.
