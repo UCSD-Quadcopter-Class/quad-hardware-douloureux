@@ -1,0 +1,53 @@
+commit 31284d968fca0c2debc7e28cd229677303ac0adc
+
+Power
+
+THe wires between your battery, the jumper, BAT_GND, the VBAT and BAT_GND planes,  and the voltage regulater need to be high current need the high current.
+
+
+DRC
+
+The "width" errors for the signal to your antenna should be fixed rather than approved.
+
+Motor holders
+
+ok
+
+Pours
+
+You need one continuous pour that surrounds all the antenna driver circuity.  Look at the red board.
+
+Also, it's better if you have a separate ground pour on layer 2 under the antenna driver.  It can be the same size and shape as the ground pour on Top.
+
+You need separate pours for GND and BAT_GND.  They can be the same size and shape as 3V and VBAT.
+
+DRC is not complaining, but it'd be safer if the gap between the VBAT and 3V planes was wider.  It's very narrow in a couple places.
+
+Antenna
+
+The wire between C8 and the antenna and the balun should be shorter.  check the red board.
+
+Oscillator
+
+THe oscillator needs to match the layout on the red board.
+
+decoupling
+
+your decoupling caps are too far from the micro controller and IMU.  The caps for each part should be as close as possible to the ICs.
+
+Voltage regulator
+
+ok.
+
+Reset button
+
+You have no reset button.
+
+Jumper
+
+ok.
+
+Misc
+
+
+A bunch of your wires are thicker than they need to be. e.g., RESET and the PWM lines should be minimum width.  It'll make routing easier.  Use the auto router.
