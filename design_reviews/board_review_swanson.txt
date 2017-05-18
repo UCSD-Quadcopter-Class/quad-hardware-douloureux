@@ -56,3 +56,18 @@ A bunch of your wires are thicker than they need to be. e.g., RESET and the PWM 
 You are using the wrong diodes in your motor drivers.  You want the other diode in the prebuilt parts lbr.  It has wider pads.
 
 The pads on your MOSFET are too small. See page 6 of the data sheet.
+
+commit ca9cfaa74ee691c767ac16b14bd26adeac9a7810
+
+Your battery is connected to GND instead of BAT_GND.
+
+You’ve got long wires leading from your battery/jumper out to your VBAT BAT_GND pours.  I would extend those pours toward the battery to make those wires shorter.
+
+you still have two pours around your antenna.  The restrict should go around the GND pours, not through them.
+
+your decoupling caps are still too far away from micro controller.  R2 and R3 don’t need to be close to the IMU (they are not caps) and they are keep the caps from being as close as they could be.
+
+You are still using the wrong diodes in your motor contorllers.  Use this one: 
+
+DIODE-SCHOTTKY_SMD-SOD123-360MV
+
