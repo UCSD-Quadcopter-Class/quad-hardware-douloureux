@@ -2090,6 +2090,98 @@
 <smd name="A" x="1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" stop="no" cream="no"/>
 <smd name="C" x="-1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
 </package>
+<package name="TE_FSM8JSMA_HS">
+<description>Switch, Tactile; 4 pin, 6.00 mm L X 6.00 mm W X 9.50 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
+<wire x1="-1.02" y1="3.06" x2="3.06" y2="3.06" width="0.12" layer="21"/>
+<wire x1="-1.61" y1="-3.56" x2="-1.61" y2="-5.54" width="0.12" layer="51"/>
+<wire x1="-1.61" y1="-5.54" x2="-2.89" y2="-5.54" width="0.12" layer="51"/>
+<wire x1="-1.61" y1="3.56" x2="-2.89" y2="3.56" width="0.12" layer="51"/>
+<wire x1="-1.61" y1="5.54" x2="-1.61" y2="3.56" width="0.12" layer="51"/>
+<wire x1="-1.73" y1="3" x2="3" y2="3" width="0.12" layer="51"/>
+<wire x1="-2.89" y1="-3.56" x2="-1.61" y2="-3.56" width="0.12" layer="51"/>
+<wire x1="-2.89" y1="-5.54" x2="-2.89" y2="-3.56" width="0.12" layer="51"/>
+<wire x1="-2.89" y1="3.56" x2="-2.89" y2="5.54" width="0.12" layer="51"/>
+<wire x1="-2.89" y1="5.54" x2="-1.61" y2="5.54" width="0.12" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="1.73" width="0.12" layer="51"/>
+<wire x1="-3" y1="1.73" x2="-1.73" y2="3" width="0.12" layer="51"/>
+<wire x1="-3.06" y1="-3.06" x2="-3.06" y2="1.02" width="0.12" layer="21"/>
+<wire x1="-3.25" y1="-5.85" x2="-3.25" y2="5.85" width="0.05" layer="39"/>
+<wire x1="-3.25" y1="5.85" x2="3.25" y2="5.85" width="0.05" layer="39"/>
+<circle x="-3.55" y="4.5" radius="0.2" width="0.4" layer="21"/>
+<circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
+<text x="0" y="0" size="0.6096" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.75" width="0.2" layer="21"/>
+<text x="0" y="0" size="2" layer="51" font="vector" ratio="10">&gt;NAME</text>
+<wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
+<polygon width="0.01" layer="31">
+<vertex x="-1.55" y="3.5"/>
+<vertex x="-2.95" y="3.5"/>
+<vertex x="-2.95" y="5.6"/>
+<vertex x="-1.55" y="5.6"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="-1.55" y="-5.6"/>
+<vertex x="-2.95" y="-5.6"/>
+<vertex x="-2.95" y="-3.5"/>
+<vertex x="-1.55" y="-3.5"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="2.95" y="3.5"/>
+<vertex x="1.55" y="3.5"/>
+<vertex x="1.55" y="5.6"/>
+<vertex x="2.95" y="5.6"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="2.95" y="-5.6"/>
+<vertex x="1.55" y="-5.6"/>
+<vertex x="1.55" y="-3.5"/>
+<vertex x="2.95" y="-3.5"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="-1.55" y="3.5"/>
+<vertex x="-2.95" y="3.5"/>
+<vertex x="-2.95" y="5.6"/>
+<vertex x="-1.55" y="5.6"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="-1.55" y="-5.6"/>
+<vertex x="-2.95" y="-5.6"/>
+<vertex x="-2.95" y="-3.5"/>
+<vertex x="-1.55" y="-3.5"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="2.95" y="3.5"/>
+<vertex x="1.55" y="3.5"/>
+<vertex x="1.55" y="5.6"/>
+<vertex x="2.95" y="5.6"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="2.95" y="-5.6"/>
+<vertex x="1.55" y="-5.6"/>
+<vertex x="1.55" y="-3.5"/>
+<vertex x="2.95" y="-3.5"/>
+</polygon>
+<wire x1="0.35" y1="0" x2="-0.35" y2="0" width="0.05" layer="39"/>
+<wire x1="1.61" y1="-3.56" x2="2.89" y2="-3.56" width="0.12" layer="51"/>
+<wire x1="1.61" y1="-5.54" x2="1.61" y2="-3.56" width="0.12" layer="51"/>
+<wire x1="1.61" y1="3.56" x2="1.61" y2="5.54" width="0.12" layer="51"/>
+<wire x1="1.61" y1="5.54" x2="2.89" y2="5.54" width="0.12" layer="51"/>
+<wire x1="2.89" y1="-3.56" x2="2.89" y2="-5.54" width="0.12" layer="51"/>
+<wire x1="2.89" y1="-5.54" x2="1.61" y2="-5.54" width="0.12" layer="51"/>
+<wire x1="2.89" y1="3.56" x2="1.61" y2="3.56" width="0.12" layer="51"/>
+<wire x1="2.89" y1="5.54" x2="2.89" y2="3.56" width="0.12" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.12" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.12" layer="51"/>
+<wire x1="3.06" y1="-3.06" x2="-3.06" y2="-3.06" width="0.12" layer="21"/>
+<wire x1="3.06" y1="3.06" x2="3.06" y2="-3.06" width="0.12" layer="21"/>
+<wire x1="3.25" y1="-5.85" x2="-3.25" y2="-5.85" width="0.05" layer="39"/>
+<wire x1="3.25" y1="5.85" x2="3.25" y2="-5.85" width="0.05" layer="39"/>
+<smd name="1" x="-2.25" y="4.55" dx="1.4" dy="2.1" layer="1" stop="no" cream="no"/>
+<smd name="2" x="-2.25" y="-4.55" dx="1.4" dy="2.1" layer="1" stop="no" cream="no"/>
+<smd name="3" x="2.25" y="4.55" dx="1.4" dy="2.1" layer="1" stop="no" cream="no"/>
+<smd name="4" x="2.25" y="-4.55" dx="1.4" dy="2.1" layer="1" stop="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA128RFA1">
@@ -2361,6 +2453,24 @@
 <wire x1="0.635" y1="1.27" x2="0.635" y2="1.016" width="0.254" layer="94"/>
 <pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="RESOLVED-PUSHBUTTON-2PIN-NO-SHIELD_">
+<description>Generic 2 pin pushbutton</description>
+<wire x1="-1.905" y1="2.667" x2="-1.905" y2="1.397" width="0.254" layer="94"/>
+<circle x="-2.54" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="1.524" y2="-0.762" width="0.254" layer="94"/>
+<text x="-4.445" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-4.445" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="0" y1="-0.508" x2="0" y2="-1.143" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0.127" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.667" x2="-1.905" y2="2.667" width="0.254" layer="94"/>
+<wire x1="0" y1="2.667" x2="0" y2="1.397" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="2.667" x2="0" y2="2.667" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.667" x2="1.905" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.54" x2="1.524" y2="-2.54" width="0.254" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
+<pin name="1" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3068,6 +3178,55 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </device>
 </devices>
 </deviceset>
+<deviceset name="PUSHBUTTON_" prefix="SW">
+<description>Pushbutton with 2 pins shorting 1 to 2 and two extra mounting pins 3 &amp; 4</description>
+<gates>
+<gate name="G$1" symbol="RESOLVED-PUSHBUTTON-2PIN-NO-SHIELD_" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-VERTICAL-1" package="TE_FSM8JSMA_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="450-1129-ND"/>
+<attribute name="MFR" value="TE Connectivity Alcoswitch Switches"/>
+<attribute name="MPN" value="FSM4JSMA"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-VERTICAL" package="TE_FSM8JSMA_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DATA_SHEET" value="" constant="no"/>
+<attribute name="DB" value="" constant="no"/>
+<attribute name="DEVICE" value="" constant="no"/>
+<attribute name="DIST" value="" constant="no"/>
+<attribute name="DISTPN" value="" constant="no"/>
+<attribute name="HEIGHT" value="" constant="no"/>
+<attribute name="IMAGE" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MIN_QTY" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="ORIENTATION" value="" constant="no"/>
+<attribute name="PACKAGE" value="" constant="no"/>
+<attribute name="PRICE" value="" constant="no"/>
+<attribute name="SIZE" value="" constant="no"/>
+<attribute name="STOCK" value="" constant="no"/>
+<attribute name="WIDTH" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="quadparts_Jason">
@@ -3271,14 +3430,14 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <smd name="2" x="0.895" y="0" dx="1.08" dy="1.42" layer="1" roundness="46" stop="no" cream="no"/>
 </package>
 <package name="N-CHANNELMOFSET">
-<smd name="P$2" x="-0.95" y="-1.4845" dx="0.559" dy="1.724" layer="1"/>
-<smd name="P$3" x="0.95" y="-1.4845" dx="0.559" dy="1.724" layer="1"/>
-<smd name="P$1" x="0" y="1.4845" dx="0.559" dy="1.724" layer="1"/>
+<smd name="P$2" x="-0.95" y="-1.15" dx="1" dy="1.5" layer="1"/>
+<smd name="P$3" x="0.95" y="-1.15" dx="1" dy="1.5" layer="1"/>
+<smd name="P$1" x="0" y="0.9345" dx="2.9" dy="2.05" layer="1"/>
 <text x="1.666" y="0.099" size="0.3048" layer="25" font="vector">&gt;NAME</text>
-<wire x1="1.4" y1="2.4" x2="1.4" y2="-2.4" width="0.05" layer="39"/>
-<wire x1="1.4" y1="-2.4" x2="-1.3" y2="-2.4" width="0.05" layer="39"/>
-<wire x1="-1.3" y1="-2.4" x2="-1.3" y2="2.4" width="0.05" layer="39"/>
-<wire x1="-1.3" y1="2.4" x2="1.4" y2="2.4" width="0.05" layer="39"/>
+<wire x1="1.7" y1="2.2" x2="1.7" y2="-2.15" width="0.05" layer="39"/>
+<wire x1="1.7" y1="-2.15" x2="-1.7" y2="-2.15" width="0.05" layer="39"/>
+<wire x1="-1.7" y1="-2.15" x2="-1.7" y2="2.2" width="0.05" layer="39"/>
+<wire x1="-1.7" y1="2.2" x2="1.7" y2="2.2" width="0.05" layer="39"/>
 </package>
 <package name="9-AXIS_IMU">
 <smd name="P$1" x="-1.53" y="1.775" dx="1.4" dy="0.28" layer="1" rot="R270"/>
@@ -3842,6 +4001,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="D6" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123"/>
 <part name="D7" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123"/>
 <part name="D8" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123"/>
+<part name="SW1" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
 </parts>
 <sheets>
 <sheet>
@@ -3948,6 +4108,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="D6" gate="G$1" x="228.6" y="17.78" rot="R90"/>
 <instance part="D7" gate="G$1" x="304.8" y="16.256" rot="R90"/>
 <instance part="D8" gate="G$1" x="381" y="17.78" rot="R90"/>
+<instance part="SW1" gate="G$1" x="28.956" y="159.766"/>
 </instances>
 <busses>
 </busses>
@@ -4184,6 +4345,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="154.94" y1="152.4" x2="160.02" y2="152.4" width="0.1524" layer="91"/>
 <label x="160.02" y="152.4" size="1.27" layer="95" xref="yes"/>
 <pinref part="C10" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="23.876" y1="157.226" x2="14.986" y2="157.226" width="0.1524" layer="91"/>
+<label x="14.986" y="157.226" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -4431,6 +4597,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="167.64" y1="127" x2="172.72" y2="127" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="127" x2="172.72" y2="120.65" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="34.798" y1="156.972" x2="44.704" y2="156.972" width="0.1524" layer="91"/>
+<label x="44.958" y="156.972" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
